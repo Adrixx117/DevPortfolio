@@ -1,0 +1,15 @@
+/*
+  # HSTS: fuerza HTTPS y protege subdominios, listo para preload
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+
+  # Evita que la página sea cargada en un frame (clickjacking)
+  X-Frame-Options: DENY
+
+  # Evita detección incorrecta del tipo de contenido
+  X-Content-Type-Options: nosniff
+
+  # Referrer policy segura
+  Referrer-Policy: no-referrer-when-downgrade
+
+  # Controla permisos de contenido (puedes ajustar si usas scripts externos)
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none';
