@@ -40,7 +40,7 @@ const es: Dictionary = {
   projects: { heading: 'Proyectos Seleccionados', cta: 'Trabajemos juntos →' },
   contact: {
     heading: 'Construyamos algo grandioso',
-    body: 'Disponible para colaboraciones freelance y proyectos de negocio.',
+    body: 'Disponible para colaboraciones freelance y proyectos de negocio.  adricall060@gmail.com',
     cta: 'Contactar',
   },
 }

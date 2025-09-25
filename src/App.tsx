@@ -54,7 +54,19 @@ export default function App() {
                     <TechIcons />
                   </div>
                   <div className="md:col-span-1">
-                    <div className="aspect-[4/3] rounded-2xl bg-gradient-to-br from-white/10 to-transparent border border-white/10" />
+                    <div className="md:col-span-1">
+                      <div className="md:col-span-1">
+                        <div className="aspect-[4/3] rounded-2xl bg-white/5 border-2 border-white/30 p-1 shadow-xl">
+                          <img
+                            src="/icons/freepik.png"
+                            alt="Descripción de la imagen"
+                            className="w-full h-full rounded-xl object-cover shadow-lg"
+                          />
+                        </div>
+                      </div>
+
+                    </div>
+
                   </div>
                 </div>
               </div>
