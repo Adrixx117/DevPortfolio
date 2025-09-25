@@ -109,7 +109,7 @@ export default function App() {
               <h3 className="text-3xl md:text-4xl font-semibold">{t.contact.heading}</h3>
               <p className="mt-4 text-gray-300 max-w-xl mx-auto">{t.contact.body}</p>
               <div className="mt-8">
-                <Button href="mailto:hello@yourdomain.com?subject=Project%20Inquiry">{t.contact.cta}</Button>
+                <Button href="mailto:adricall060@gmail.com?subject=Project%20Inquiry">{t.contact.cta}</Button>
               </div>
             </div>
           </div>
