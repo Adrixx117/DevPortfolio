@@ -86,7 +86,7 @@ export default function App() {
                     </h3>
                     <p className="mt-3 text-gray-300">
                       {lang === 'es'
-                        ? 'Con base en buenas prácticas de arquitectura en la nube, automatización e infraestructura como código, ademas estoy certificado en Prompt Engineering.with IA'
+                        ? 'Con base en buenas prácticas de arquitectura en la nube, automatización e infraestructura como código, ademas estoy certificado en Prompt Engineering with IA.'
                         : 'Grounded in cloud architecture best practices, automation, and infrastructure as code , and I am certified in Prompt Engineering with IA'}
                     </p>
                   </div>
