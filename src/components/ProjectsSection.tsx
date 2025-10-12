@@ -24,6 +24,13 @@ const projects: Project[] = [
     url: '#',
     repo: 'https://github.com/Adrixx117',
   },
+  {
+    title:'Dictionary App',
+    description: 'Aplicación de diccionario con búsqueda de significado de palabras',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    url: '#',
+    repo: 'https://github.com/Adrixx117',
+  }
 ]
 
 export function ProjectsSection() {
