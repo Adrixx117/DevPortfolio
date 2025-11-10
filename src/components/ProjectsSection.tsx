@@ -30,6 +30,13 @@ const projects: Project[] = [
     tech: ['HTML', 'CSS', 'JavaScript'],
     url: '#',
     repo: 'https://github.com/Adrixx117',
+  },
+  {
+    title:'Ecommerce Shop',
+    description:'An ecommerce made with Google boosted programming leanguage Dart/Flutter , includes Auth and DB.',
+    tech:['Dart','C+','Firebase'],
+    url:'#',
+    repo:'https://github.com/Adrixx117/Flutter-Dart-Ecommerce',
   }
 ]
 
