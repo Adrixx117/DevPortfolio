@@ -4,6 +4,9 @@ import { Navbar } from './components/Navbar'
 import { Footer } from './components/Footer'
 import { TechIcons } from './components/TechIcons'
 import { Button } from './components/Button'
+import { TypingText } from './components/TypingText'
+import { StarsBackground } from './components/StarsBackground'
+import { GlowCard } from './components/ui/spotlight-card'
 import { useI18n } from './i18n'
 
 export default function App() {
@@ -11,6 +14,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-ink text-white font-sf selection:bg-white selection:text-black">
       <div className="pointer-events-none fixed inset-0 bg-[radial-gradient(80%_60%_at_50%_-10%,#ffffff10,transparent_60%)]" />
+      <StarsBackground />
       <Navbar />
 
       <main>
@@ -22,8 +26,11 @@ export default function App() {
               transition={{ duration: 0.6, ease: 'easeOut' }}
               className="text-center text-4xl md:text-6xl font-semibold tracking-tight"
             >
-              {t.hero.titleA}
-              <span className="text-silver"> {t.hero.titleB}</span>
+              <TypingText 
+                text={t.hero.titleA + (t.hero.titleB ? ' ' + t.hero.titleB : '')}
+                speed={80}
+                delay={300}
+              />
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 10 }}
@@ -43,7 +50,13 @@ export default function App() {
               <div className="rounded-[22px] bg-graphite p-6 md:p-8">
                 <div className="grid md:grid-cols-3 gap-6 md:gap-8 items-center">
                   <div className="md:col-span-2">
-                    <h2 className="text-2xl md:text-3xl font-semibold">Adrian Calleja - FrontEnd Dev</h2>
+                    <h2 className="text-2xl md:text-3xl font-semibold">
+                      <TypingText 
+                        text="Adrian Calleja - FrontEnd Dev"
+                        speed={80}
+                        delay={600}
+                      />
+                    </h2>
                     <p className="mt-3 text-gray-300">
                       Specializing in React, TypeScript, and delightful micro-interactions.
                     </p>
@@ -77,17 +90,25 @@ export default function App() {
         {/* AWS study note */}
         <section className="py-10">
           <div className="mx-auto max-w-7xl px-6">
-            <div className="rounded-3xl border border-white/10 bg-gradient-to-b from-white/5 to-transparent p-1 shadow-soft">
+            <GlowCard
+              glowColor="blue"
+              customSize
+              className="w-full"
+            >
               <div className="rounded-[22px] bg-graphite p-6 md:p-8">
                 <div className="grid md:grid-cols-3 gap-6 md:gap-8 items-center">
                   <div className="md:col-span-2">
                     <h3 className="text-2xl md:text-3xl font-semibold">
-                      {lang === 'es' ? 'Formación en AWS Cloud Solutions' : 'Training in AWS Cloud Solutions'}
+                      <TypingText 
+                        text={lang === 'es' ? 'Formación en AWS Cloud Solutions' : 'Training in AWS Cloud Solutions'}
+                        speed={150}
+                        delay={200}
+                      />
                     </h3>
                     <p className="mt-3 text-gray-300">
                       {lang === 'es'
-                        ? 'Con base en buenas prácticas de arquitectura en la nube, automatización e infraestructura como código, ademas estoy certificado en Prompt Engineering with IA.'
-                        : 'Grounded in cloud architecture best practices, automation, and infrastructure as code , and I am certified in Prompt Engineering with IA'}
+                        ? 'Con base en buenas prácticas de arquitectura en la nube, automatización e infraestructura como código.'
+                        : 'Grounded in cloud architecture best practices, automation, and infrastructure as code.'}
                     </p>
                   </div>
                   <div className="md:col-span-1">
@@ -97,7 +118,42 @@ export default function App() {
                   </div>
                 </div>
               </div>
-            </div>
+            </GlowCard>
+          </div>
+        </section>
+
+        {/* Prompt Engineering certification */}
+        <section className="py-10">
+          <div className="mx-auto max-w-7xl px-6">
+            <GlowCard
+              glowColor="purple"
+              customSize
+              className="w-full"
+            >
+              <div className="rounded-[22px] bg-graphite p-6 md:p-8">
+                <div className="grid md:grid-cols-3 gap-6 md:gap-8 items-center">
+                  <div className="md:col-span-2">
+                    <h3 className="text-2xl md:text-3xl font-semibold">
+                      <TypingText 
+                        text={lang === 'es' ? 'Certificación en Prompt Engineering' : 'Prompt Engineering Certification'}
+                        speed={150}
+                        delay={400}
+                      />
+                    </h3>
+                    <p className="mt-3 text-gray-300">
+                      {lang === 'es'
+                        ? 'Certificado en Prompt Engineering con IA, especializado en técnicas avanzadas de ingeniería de prompts para maximizar la efectividad de modelos de lenguaje e inteligencia artificial.'
+                        : 'Certified in Prompt Engineering with AI, specializing in advanced prompt engineering techniques to maximize the effectiveness of language models and artificial intelligence.'}
+                    </p>
+                  </div>
+                  <div className="md:col-span-1">
+                    <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-white/10">
+                      <img src="/icons/tituloIA.jpg" alt="Prompt Engineering Certification" className="h-full w-full object-contain p-2 scale-95 transition-transform" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </GlowCard>
           </div>
         </section>
 

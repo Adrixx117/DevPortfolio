@@ -12,7 +12,7 @@ type Dictionary = {
 const en: Dictionary = {
   navbar: { projects: 'Projects', contact: 'Contact' },
   hero: {
-    titleA: 'Clear, scalable, AI-powered frontend.',
+    titleA: 'Clean, AI-powered frontend.',
     titleB: '',
     subtitle:
       'I build elegant, fast, and accessible web apps with modern frameworks and impeccable UI.',
@@ -30,10 +30,10 @@ const en: Dictionary = {
 const es: Dictionary = {
   navbar: { projects: 'Proyectos', contact: 'Contacto' },
   hero: {
-    titleA: 'Frontend claro, escalable y potenciado con IA.',
+    titleA: 'Frontend limpio y potenciado con IA.',
     titleB: '',
     subtitle:
-      'Soy desarrollador especializado en frontend, integrando IA en el desarrollo de software y con experiencia en AWS, Vercel, Netlify y entornos como Cursor. Me enfoco en crear aplicaciones modernas, escalables y de alto rendimiento.',
+      'Soy desarrollador especializado en frontend, Vibe Coding con IA en el desarrollo de software y con experiencia en AWS, Vercel, Netlify y entornos como Cursor. Me enfoco en crear aplicaciones modernas, escalables y de alto rendimiento.',
     viewProjects: 'Ver Proyectos',
     contact: 'Contacto',
   },

@@ -25,18 +25,27 @@ const projects: Project[] = [
     repo: 'https://github.com/Adrixx117',
   },
   {
-    title:'Dictionary App',
+    title: 'Dictionary App',
     description: 'Aplicación de diccionario con búsqueda de significado de palabras',
     tech: ['HTML', 'CSS', 'JavaScript'],
     url: '#',
     repo: 'https://github.com/Adrixx117',
   },
   {
-    title:'Ecommerce Shop',
-    description:'An ecommerce made with Google boosted programming leanguage Dart/Flutter , includes Auth and DB.',
-    tech:['Dart','C+','Firebase'],
-    url:'#',
-    repo:'https://github.com/Adrixx117/Flutter-Dart-Ecommerce',
+    title: 'Ecommerce Shop',
+    description: 'An ecommerce made with Google boosted programming language Dart/Flutter, includes Auth and DB.',
+    tech: ['Dart', 'C++', 'Firebase'],
+    url: '#',
+    repo: 'https://github.com/Adrixx117/Flutter-Dart-Ecommerce',
+  },
+
+  {
+    title: 'N8N Automation',
+    description: 'A telegram bot that automates with API´s real time data for price Alerts',
+    tech: ['N8N', 'Telegram Bot', 'CoinGecko API'],
+    url: '#',
+    repo: '',
+    linkedin: 'https://www.linkedin.com/posts/adrii-call_n8n-automatizaciaejn-telegram-activity-7404476275698061312-6Cg_',
   }
 ]
 
@@ -61,5 +70,3 @@ export function ProjectsSection() {
     </section>
   )
 }
-
-
