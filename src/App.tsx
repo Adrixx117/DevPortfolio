@@ -87,6 +87,45 @@ export default function App() {
           </div>
         </section>
 
+        {/* N8N Projects */}
+        <section className="py-10">
+          <div className="mx-auto max-w-7xl px-6">
+            <GlowCard
+              glowColor="green"
+              customSize
+              className="w-full"
+            >
+              <div className="rounded-[22px] bg-graphite p-6 md:p-8">
+                <div className="grid md:grid-cols-3 gap-6 md:gap-8 items-center">
+                  <div className="md:col-span-2">
+                    <h3 className="text-2xl md:text-3xl font-semibold">
+                      <TypingText 
+                        text={lang === 'es' ? 'Proyectos con N8N' : 'N8N Projects'}
+                        speed={150}
+                        delay={100}
+                      />
+                    </h3>
+                    <p className="mt-3 text-gray-300">
+                      {lang === 'es'
+                        ? 'Automatización de procesos y workflows con N8N. Creación de bots de Telegram y sistemas de alertas en tiempo real con integración de APIs.'
+                        : 'Process and workflow automation with N8N. Creating Telegram bots and real-time alert systems with API integration.'}
+                    </p>
+                  </div>
+                  <div className="md:col-span-1">
+                    <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 flex items-center justify-center bg-white/5 p-4">
+                      <img 
+                        src="/icons/n8n-wordmark-dark.svg" 
+                        alt="N8N" 
+                        className="h-full w-full object-contain scale-95 transition-transform" 
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </GlowCard>
+          </div>
+        </section>
+
         {/* AWS study note */}
         <section className="py-10">
           <div className="mx-auto max-w-7xl px-6">
